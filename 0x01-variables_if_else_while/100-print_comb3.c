@@ -14,7 +14,7 @@ int main(void)
 
 	int b = '1';
 
-	while (a <= '9')
+	while (a <= '8')
 	{
 		while (b <= '9')
 		{
