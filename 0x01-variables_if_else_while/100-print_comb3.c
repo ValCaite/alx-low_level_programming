@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of two digits
+ *main - prints all possible different combinations of two digits
  *
  *Return: Always 0
  */
@@ -9,33 +9,33 @@
 int main(void)
 
 {
+	int a, b = '0', c;
 
-	int a = '0';
-
-	int b = '1';
-
-	while (a <= '8')
+	for (a = '0'; a <= '9'; a++)
 	{
-		while (b <= '9')
+		for (c = b; c <= '9'; c++)
 		{
-			if (!(a > b) || a == b)
+			if (a != c)
 			{
 				putchar(a);
-				putchar(b);
-				if (a == '8' && b == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(c);
 			}
-			b++;
+			if (a == c)
+			{
+				continue;
+			}
+			if (a == '8' && c == '9')
+			{
+				break;
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-		b = '0';
-		a++;
+		b++;
 	}
+	putchar('\n');
 	return (0);
 }
