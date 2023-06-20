@@ -15,10 +15,10 @@ int _abs(int c)
 	if (c < 0)
 {
 
-	int _abs_val;
+	int _abs;
 
-		_abs_val = c * -1;
-		return (_abs_val);
+		_abs = c * -1;
+		return (_abs);
 	}
 	return (c);
 }
