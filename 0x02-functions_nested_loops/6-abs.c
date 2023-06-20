@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _abs - computes the absolute value of an integer
@@ -8,16 +9,20 @@
  * Return: Absolutr value of a number
  */
 
-int _abs(int c)
+int _abs(int c);
 
 {
 
 	if (c < 0)
-	{
-		int abs_val;
 
-		abs_val = c * -1;
-		return (abs_val);
+	{
+		int _abs_val;
+
+		_abs_val = c * -1;
+		return (_abs_val);
+
 	}
+
 	return (c);
+
 }
