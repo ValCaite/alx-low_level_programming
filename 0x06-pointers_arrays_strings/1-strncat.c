@@ -6,6 +6,7 @@
  * @src: source string pointer
  * @n: number of bytes to be concatenated
  *
+ *Return: pointer to destination string
  */
 
 char *_strncat(char *dest, char *src, int n)
